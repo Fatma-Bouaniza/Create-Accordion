@@ -1,0 +1,38 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.accordion{
+    width: 50%;
+    margin: 10px auto;
+}
+.btn{
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0;
+    padding: 10px;
+
+}
+.panel{
+    padding: 10px;
+    display: none;
+}
+.btn1:hover + div , .btn2:hover + div , .btn3:hover + div{
+    display: block;
+
+}
+
+.spanminus{
+    display: none;
+}
+.btn1:hover .spanminus , .btn2:hover .spanminus , .btn3:hover .spanminus{
+    display: block;
+
+}
+.btn1:hover .spanplus , .btn2:hover .spanplus , .btn3:hover .spanplus{
+    display: none;
+}
